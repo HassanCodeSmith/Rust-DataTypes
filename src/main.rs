@@ -61,4 +61,7 @@ fn main() {
             format!("Index out of bounds. Plese enter a number between 0 and {}", a.len() - 1).red()
         );
     }
+
+    println!("Please Enter to exit...");
+    io::stdin().read_line(&mut String::new()).expect("Failed to read line.");
 }
